@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="hiragana.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper header__wrapper">
+			Учим хирагану
+		</div>
+	</header>
+	<main class="main">
+		<div class="fixed-container">
+			<select class="training-mode">
+				<option value="1">Японский → Русский</option>
+				<option value="2">Русский → Японский</option>
+			</select>
+			<div class="kana-container">
+				<div class="check-box__container">
+					<div class="check-box__pattern">
+						<div class="check-box__text">A</div>
+						<input type="checkbox" class="check-box__checkbox" checked>
+					</div>
+					<div class="check-box__pattern">
+						<div class="check-box__text">Ка</div>
+						<input type="checkbox" class="check-box__checkbox">
+					</div>
+					<div class="check-box__pattern">
+						<div class="check-box__text">Са</div>
+						<input type="checkbox" class="check-box__checkbox">
+					</div>
+					<div class="check-box__pattern">
+						<div class="check-box__text">Та</div>
+						<input type="checkbox" class="check-box__checkbox">
+					</div>
+					<div class="check-box__pattern">
+						<div class="check-box__text">На</div>
+						<input type="checkbox" class="check-box__checkbox">
+					</div>
+					<div class="check-box__pattern">
+						<div class="check-box__text">Ха</div>
+						<input type="checkbox" class="check-box__checkbox">
+					</div>
+					<div class="check-box__pattern">
+						<div class="check-box__text">Ма</div>
+						<input type="checkbox" class="check-box__checkbox">
+					</div>
+					<div class="check-box__pattern">
+						<div class="check-box__text">Я</div>
+						<input type="checkbox" class="check-box__checkbox">
+					</div>
+					<div class="check-box__pattern">
+						<div class="check-box__text">Ра</div>
+						<input type="checkbox" class="check-box__checkbox">
+					</div>
+					<div class="check-box__pattern">
+						<div class="check-box__text">Ва</div>
+						<input type="checkbox" class="check-box__checkbox">
+					</div>
+				</div>
+				<!-- <button class="next-symbol left"></button> -->
+				<div class="kana-wrapper">
+					<div class="kana-box">あ</div>
+					<div class="play-stop__container">
+						<div class="play"></div>
+						<div class="stop"></div>
+					</div>
+					<input class="time" type="range" min="1" max="10" value="5">
+					<div class="time-value">5 секунд</div>
+				</div>
+				<button class="next-symbol right"></button>
+			</div>
+			<!-- <div class="check-box__container">
+				<div class="check-box__pattern">
+					<div class="check-box__text">A</div>
+					<input type="checkbox" class="check-box__checkbox" checked>
+				</div>
+				<div class="check-box__pattern">
+					<div class="check-box__text">Ка</div>
+					<input type="checkbox" class="check-box__checkbox">
+				</div>
+				<div class="check-box__pattern">
+					<div class="check-box__text">Са</div>
+					<input type="checkbox" class="check-box__checkbox">
+				</div>
+				<div class="check-box__pattern">
+					<div class="check-box__text">Та</div>
+					<input type="checkbox" class="check-box__checkbox">
+				</div>
+				<div class="check-box__pattern">
+					<div class="check-box__text">На</div>
+					<input type="checkbox" class="check-box__checkbox">
+				</div>
+				<div class="check-box__pattern">
+					<div class="check-box__text">Ха</div>
+					<input type="checkbox" class="check-box__checkbox">
+				</div>
+				<div class="check-box__pattern">
+					<div class="check-box__text">Ма</div>
+					<input type="checkbox" class="check-box__checkbox">
+				</div>
+				<div class="check-box__pattern">
+					<div class="check-box__text">Я</div>
+					<input type="checkbox" class="check-box__checkbox">
+				</div>
+				<div class="check-box__pattern">
+					<div class="check-box__text">Ра</div>
+					<input type="checkbox" class="check-box__checkbox">
+				</div>
+				<div class="check-box__pattern">
+					<div class="check-box__text">Ва + н</div>
+					<input type="checkbox" class="check-box__checkbox">
+				</div>
+			</div> -->
+		</div>
+	</main>
+	<footer>
+		<div class="error-message"></div>
+	</footer>
+</body>
+<script src="/script/kana.js"></script>
+
+</html>

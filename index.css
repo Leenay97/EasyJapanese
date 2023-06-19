@@ -1,0 +1,27 @@
+.main {	
+	width: 100vw;
+	margin-top: 60px;
+	padding: 30px 0;
+	flex-grow: 1;
+}
+.main__tasks-container {
+	margin-top: 60px;
+}
+
+.task {
+	height: 80px;
+	width: 400px;
+	background-color: rgb(97, 214, 232);
+	margin-bottom: 20px;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	color: white;
+	padding: 20px 0;
+	cursor: pointer;
+
+}
+.task:hover {
+	
+}

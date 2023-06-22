@@ -29,6 +29,7 @@ let playButton = document.querySelector('.play');
 let pauseButton = document.querySelector('.stop');
 let timeScale = document.querySelector('.time');
 let timeShown = document.querySelector('.time-value');
+let trainingModeInput = document.querySelector('.training-mode');
 
 let symbol = "あ";
 let symbolRus = "А";
@@ -37,11 +38,25 @@ let rndPos;
 let symbolPrev;
 let timer;
 let time = 5000;
+let trainingMode = 'japru';
 
 
 let k = 0;
 
 let allowedRows = [];
+
+function SetTrainingMode() {
+    if (trainingModeInput.value == 1) {
+        trainingMode = 'japru';
+    }else{
+        trainingMode = 'rujap';
+    }
+    console.log(trainingMode);
+}
+
+trainingModeInput.addEventListener('change',(e)=>{
+    SetTrainingMode();
+})
 
 function getAllowedRows() {
     allowedRows = [];
@@ -83,8 +98,15 @@ function error() {
 
 function newSymbol() {
     randomSymbol();
-    kanaBox.innerHTML = symbol;
-    k = 0;
+    if (trainingMode == 'japru') {
+        kanaBox.innerHTML = symbol;
+        k = 0;
+    } else {
+        kanaBox.innerHTML = symbolRus;
+        k = 1;
+    }
+    
+    
 }
 
 kanaBox.addEventListener("click", (e) => {

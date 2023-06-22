@@ -21,12 +21,11 @@ body {
 .training-mode {
     height: 50px;
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
     border: 3px solid #e3e3e355;
     border-radius: 5px;
     outline: none;
     padding: 0 20px;
-    margin-bottom: 40px;
     cursor: pointer;
 }
 .training-mode:hover {
@@ -178,4 +177,17 @@ body {
 
 .isError {
     bottom: 0px;
+}
+
+
+@media screen and (max-width: 710px) {
+    .kana-container {
+        flex-direction: column-reverse;
+    }
+    .kana-box {
+        order: 1;
+    }
+    body {
+        overflow-y: scroll;
+    }
 }

@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="hiragana.css">
+	<link rel="stylesheet" href="css/hiragana.css">
 	<title>Document</title>
 </head>
 
@@ -18,12 +18,12 @@
 	</header>
 	<main class="main">
 		<div class="fixed-container">
-			<select class="training-mode">
-				<option value="1">Японский → Русский</option>
-				<option value="2">Русский → Японский</option>
-			</select>
 			<div class="kana-container">
 				<div class="check-box__container">
+					<select class="training-mode">
+						<option value="1">Японский → Русский</option>
+						<option value="2">Русский → Японский</option>
+					</select>
 					<div class="check-box__pattern">
 						<div class="check-box__text">A</div>
 						<input type="checkbox" class="check-box__checkbox" checked>
@@ -125,6 +125,6 @@
 		<div class="error-message"></div>
 	</footer>
 </body>
-<script src="/script/kana.js"></script>
+<script src="script/kana.js"></script>
 
 </html>
